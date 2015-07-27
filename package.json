@@ -1,0 +1,15 @@
+{
+    "name": "adlawson.com",
+    "version": "1.0.0",
+    "description": "Personal website",
+    "private": true,
+    "main": "scripts/index.js",
+    "devDependencies": {
+        "uglifycss": "0.0.15"
+    },
+    "scripts": {
+        "build": "npm run build-dir && npm run build-css",
+        "build-dir": "mkdir -p build",
+        "build-css": "node_modules/.bin/uglifycss styles/vendor/pigeon/build/pigeon.css styles/vendor/font-awesome/css/font-awesome.css styles/main.css > build/main.min.css"
+    }
+}
