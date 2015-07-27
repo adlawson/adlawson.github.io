@@ -42,14 +42,22 @@
     <canvas id="gol" height="0" width="0" class="background"></canvas>
 
     <script src="build/main.min.js"></script>
-    <script type="application/javascript">
-        window.gol(document.getElementById('gol'), document.getElementById('play'), {color:'aliceblue', clickClass:'fa-spin', size:12, timeout:50}, [
-            /* Gosper's Glider */
-                    [1, 0],
-                            [2, 1],
-            [0, 2], [1, 2], [2, 2]
-        ]);
-    </script>
+    <script type="application/javascript">window.gol(document.getElementById('gol'), document.getElementById('play'), {color:'aliceblue', clickClass:'fa-spin', size:12, timeout:120}, [
+        // Lidka Methuselah
+                [-3,-7],
+        [-4,-6],        [-2,-6],
+                [-3,-5],
+
+
+
+
+
+                                                                [ 4, 4],
+                                                [ 2, 5],        [ 4, 5],
+                                        [ 1, 6],[ 2, 6],        [ 4, 6],
+
+                                [ 0, 8],[ 1, 8],[ 2, 8]
+    ]);</script>
 
 </body>
 </html>
