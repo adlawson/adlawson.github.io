@@ -4,12 +4,19 @@
     "description": "Personal website",
     "private": true,
     "main": "scripts/index.js",
+    "dependencies": {
+        "conway": "git://github.com/adlawson/js-conway.git#master",
+        "pleasejs": "0.4.2"
+    },
     "devDependencies": {
-        "uglifycss": "0.0.15"
+        "browserify": "11.0.0",
+        "uglifycss": "0.0.15",
+        "uglifyjs": "2.4.10"
     },
     "scripts": {
-        "build": "npm run build-dir && npm run build-css",
+        "build": "npm run build-dir && npm run build-js && npm run build-css",
         "build-dir": "mkdir -p build",
-        "build-css": "node_modules/.bin/uglifycss styles/vendor/pigeon/build/pigeon.css styles/vendor/font-awesome/css/font-awesome.css styles/main.css > build/main.min.css"
+        "build-css": "node_modules/.bin/uglifycss styles/vendor/pigeon/build/pigeon.css styles/vendor/font-awesome/css/font-awesome.css styles/main.css > build/main.min.css",
+        "build-js": "node_modules/.bin/browserify -s gol scripts/index.js | node_modules/.bin/uglifyjs -mc > build/main.min.js"
     }
 }

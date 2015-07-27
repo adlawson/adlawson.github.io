@@ -70,6 +70,14 @@ p {
 .rule {
     border-top: 1px solid #555;
 }
+.background {
+    position:absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    filter: alpha(opacity=30);
+    opacity: 0.3;
+}
 
 /* Logo */
 .logo {

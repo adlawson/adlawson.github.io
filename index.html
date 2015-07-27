@@ -33,10 +33,23 @@
                 <li><a href="https://www.linkedin.com/in/adlawson" title="LinkedIn" class="fa fa-linkedin"></a></li>
                 <li><a href="http://adlawson.com/cv" title="CV/Résumé" class="fa fa-file-text"></a></li>
                 <li><a href="mailto:adlawson+web@gmail.com" title="Email" class="fa fa-envelope"></a></li>
+                <li><a href="#" title="Play?" id="play" class="fa fa-star"></a></li>
             </ul>
         </div>
 
     </div>
+
+    <canvas id="gol" height="0" width="0" class="background"></canvas>
+
+    <script src="build/main.min.js"></script>
+    <script type="application/javascript">
+        window.gol(document.getElementById('gol'), document.getElementById('play'), {color:'aliceblue', clickClass:'fa-spin', size:12, timeout:50}, [
+            /* Gosper's Glider */
+                    [1, 0],
+                            [2, 1],
+            [0, 2], [1, 2], [2, 2]
+        ]);
+    </script>
 
 </body>
 </html>
