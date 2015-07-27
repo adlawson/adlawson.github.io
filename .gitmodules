@@ -9,4 +9,4 @@
 [submodule "cv"]
 	path = cv
 	url = https://github.com/adlawson/cv.git
-	branch = gh-pages
+	branch = master
