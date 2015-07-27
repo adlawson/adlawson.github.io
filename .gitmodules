@@ -1,8 +1,8 @@
 [submodule "styles/vendor/pigeon"]
 	path = styles/vendor/pigeon
-	url = git@github.com:rowanmanning/pigeon.git
+	url = https://github.com/rowanmanning/pigeon.git
 	branch = master
 [submodule "styles/vendor/font-awesome"]
 	path = styles/vendor/font-awesome
-	url = git@github.com:FortAwesome/Font-Awesome.git
+	url = https://github.com/FortAwesome/Font-Awesome.git
 	branch = master
