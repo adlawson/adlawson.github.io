@@ -14,7 +14,11 @@ p {
 }
 .container {
     margin: 0 auto;
-    width: 540px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: auto;
+    max-width: 540px;
+    *width: 540px;
 }
 .content {
     padding: 10px;
