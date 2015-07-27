@@ -6,3 +6,7 @@
 	path = styles/vendor/font-awesome
 	url = https://github.com/FortAwesome/Font-Awesome.git
 	branch = master
+[submodule "cv"]
+	path = cv
+	url = https://github.com/adlawson/cv.git
+	branch = gh-pages
