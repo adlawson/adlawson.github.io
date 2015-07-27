@@ -41,8 +41,10 @@ module.exports = (function (htmlElement, clickElement, opts, initialState) {
         var screenX = (x * settings.size) + (settings.width / 2);
         var screenY = (y * settings.size) + (settings.height / 2);
         if (active) {
+            ctx.beginPath();
             ctx.fillStyle = pickColor();
             ctx.fillRect(screenX, screenY, settings.size, settings.size);
+            ctx.closePath();
         } else {
             ctx.clearRect(screenX, screenY, settings.size, settings.size);
         }
