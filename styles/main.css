@@ -72,7 +72,7 @@ p {
     -webkit-border-radius: 4px;
 }
 .rule {
-    border-top: 1px solid #555;
+    border-top: 1px solid #ccc;
 }
 .background {
     position:absolute;
@@ -86,8 +86,8 @@ p {
 /* Logo */
 .logo {
     display: block;
-    height: 75px;
-    width: 75px;
+    height: 60px;
+    width: 60px;
     font-size: 0px;
     line-height: 0px;
 }
@@ -95,7 +95,7 @@ p {
     background-image: url("../images/logo-300notes.png");
 }
 .logo-bnt {
-    background-image: url("../images/logo-bnt-transparent.png");
+    background-image: url("../images/logo-bnt.png");
 }
 .logo-fullycharged {
     background-image: url("../images/logo-fullycharged.png");
@@ -104,5 +104,5 @@ p {
     background-image: url("../images/logo-graze.png");
 }
 .logo-otrl {
-    background-image: url("../images/logo-otrl-transparent.png");
+    background-image: url("../images/logo-otrl.png");
 }
