@@ -39,26 +39,18 @@
 
     </div>
 
+    <!-- Game of Life: Jaydot -->
     <canvas id="gol" height="0" width="0" class="background"></canvas>
-
     <script src="build/main.min.js"></script>
     <script type="application/javascript">window.gol(document.getElementById('gol'), document.getElementById('play'), {color:'dodgerblue', clickClass:'fa-spin', size:10, timeout:120}, [
-        // Lidka Methuselah
-                [-3,-7],
-        [-4,-6],        [-2,-6],
-                [-3,-5],
+                [ 0,-2],[ 1,-2],
+        [-1,-1],[ 0,-1],[ 1,-1],
 
-
-
-
-
-                                                                [ 4, 4],
-                                                [ 2, 5],        [ 4, 5],
-                                        [ 1, 6],[ 2, 6],        [ 4, 6],
-
-                                [ 0, 8],[ 1, 8],[ 2, 8]
+                [ 0, 1],
+                [ 0, 2],[ 1, 2],
+        [-1, 3]
     ]);</script>
-    
+
     <!-- Google Analytics -->
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
