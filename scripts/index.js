@@ -8,8 +8,8 @@ module.exports = (function (htmlElement, clickElement, opts, initialState) {
     var ctx = htmlElement.getContext('2d');
     var isPlaying = false;
     var settings = {
-        height: document.documentElement.clientHeight,
-        width: document.documentElement.clientWidth,
+        height: documentHeight(document),
+        width: documentWidth(document),
         clickClass: opts.clickClass || "playing",
         size: opts.size || 5,
         timeout: opts.timeout, // or requestAnimationFrame
@@ -21,7 +21,6 @@ module.exports = (function (htmlElement, clickElement, opts, initialState) {
 
     htmlElement.height = settings.height;
     htmlElement.width = settings.width;
-
     clickElement.addEventListener('click', clickToggle);
 
     function clickToggle(event) {
@@ -31,6 +30,22 @@ module.exports = (function (htmlElement, clickElement, opts, initialState) {
             event.target.classList.add(settings.clickClass);
             life(renderToCanvas, loopFn, initialState);
         }
+    }
+
+    function documentHeight(doc) {
+        return Math.max(
+            doc.body.scrollHeight, doc.documentElement.scrollHeight,
+            doc.body.offsetHeight, doc.documentElement.offsetHeight,
+            doc.body.clientHeight, doc.documentElement.clientHeight
+        );
+    }
+
+    function documentWidth(doc) {
+        return Math.max(
+            doc.body.scrollWidth, doc.documentElement.scrollWidth,
+            doc.body.offsetWidth, doc.documentElement.offsetWidth,
+            doc.body.clientWidth, doc.documentElement.clientWidth
+        );
     }
 
     function pickColor() {
