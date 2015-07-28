@@ -79,8 +79,8 @@ p {
     top: 0;
     left: 0;
     z-index: -1;
-    filter: alpha(opacity=30);
-    opacity: 0.3;
+    filter: alpha(opacity=50);
+    opacity: 0.5;
 }
 
 /* Logo */
