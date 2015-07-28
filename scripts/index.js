@@ -38,8 +38,8 @@ module.exports = (function (htmlElement, clickElement, opts, initialState) {
     }
 
     function renderToCanvas(x, y, active) {
-        var screenX = (x * settings.size) + (settings.width / 2);
-        var screenY = (y * settings.size) + (settings.height / 2);
+        var screenX = (x * settings.size) + Math.floor(settings.width / 2);
+        var screenY = (y * settings.size) + Math.floor(settings.height / 2);
         if (active) {
             ctx.beginPath();
             ctx.fillStyle = pickColor();
