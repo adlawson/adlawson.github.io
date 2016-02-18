@@ -1,0 +1,4 @@
+[submodule "vendor/edwardtufte/tufte-css"]
+	path = vendor/edwardtufte/tufte-css
+	url = https://github.com/edwardtufte/tufte-css.git
+	branch = master
