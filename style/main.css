@@ -1,0 +1,51 @@
+body {
+    background-color: #fff;
+    color: #444;
+}
+
+h1, h2, h3 { color: #111; }
+
+.smaller { font-size: .6em; }
+
+a:link, a:active, a:visited {
+    color: #4078c0;
+    text-decoration: none;
+    background: -webkit-linear-gradient(#fff, #fff), -webkit-linear-gradient(#fff, #fff), -webkit-linear-gradient(#ccc, #ccc);
+    background: linear-gradient(#fff, #fff), linear-gradient(#fff, #fff), linear-gradient(#ccc, #ccc);
+    -webkit-background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+    -moz-background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+    background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+    background-repeat: no-repeat, no-repeat, repeat-x;
+    text-shadow: 0.03em 0 #fff, -0.03em 0 #fff, 0 0.03em #fff, 0 -0.03em #fff, 0.06em 0 #fff, -0.06em 0 #fff, 0.09em 0 #fff, -0.09em 0 #fff, 0.12em 0 #fff, -0.12em 0 #fff, 0.15em 0 #fff, -0.15em 0 #fff;
+    background-position: 0% 93%, 100% 93%, 0% 93%;
+}
+
+a.ref {
+    font-weight: bold;
+}
+
+a.ref-github { color: #4078c0; }
+a.ref-linkedin { color: #0077b5; }
+a.ref-cv { color: #FF3A61; }
+a.ref-otrl { color: #A442AB; }
+a.ref-graze { color: #00989e; }
+a.ref-300notes { color: #F75749; }
+a.ref-bnt { color: #3BB200; }
+a.ref-keybase { color: #fc8558; }
+
+ol.work {
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    width: 55%;
+}
+
+li p { width: auto; }
+
+li h3, li h4 { display: inline-block; margin-bottom: 0; }
+li h3:after, li h4:after { content: ", " }
+
+@media screen and (max-width: 760px) {
+    ol.work { width: 90%; }
+}
