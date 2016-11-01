@@ -27,9 +27,11 @@ a.ref {
 a.ref-github { color: #4078c0; }
 a.ref-linkedin { color: #0077b5; }
 a.ref-cv { color: #FF3A61; }
-a.ref-otrl { color: #A442AB; }
+/*a.ref-otrl { color: #A442AB; }*/
+a.ref-otrl, a.ref-otrl-2 { color: #D60257; }
+a.ref-otrl-1 { color: #A442AB; }
 a.ref-graze { color: #00989e; }
-a.ref-300notes { color: #F75749; }
+a.ref-300notes { color: #CF4647; }
 a.ref-bnt { color: #3BB200; }
 a.ref-keybase { color: #fc8558; }
 
@@ -48,4 +50,15 @@ li h3:after, li h4:after { content: ", " }
 
 @media screen and (max-width: 760px) {
     ol.work { width: 90%; }
+}
+
+@media print {
+    body {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    article {
+        padding: 0;
+    }
 }
