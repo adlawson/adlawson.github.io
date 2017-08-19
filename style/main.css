@@ -50,6 +50,7 @@ li h3, li h4 { display: inline-block; margin-bottom: 0; }
 li h3:after, li h4:after { content: ", " }
 
 @media screen and (max-width: 760px) {
+    article { padding: 0; }
     ol.work { width: 90%; }
 }
 
