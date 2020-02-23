@@ -1,36 +1,68 @@
-body {
-    background-color: #fff;
-    color: #444;
+@import url('../vendor/csstools/sanitize.css/sanitize.css');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:600|Montserrat&display=swap');
+
+html {
+    cursor: inherit;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12pt;
+    color: #24292e;
 }
 
-h1, h2, h3 { color: #111; }
+main {
+    margin: 3rem auto;
+    max-width: 720px;
+    padding: 0 2rem;
+}
 
-.smaller { font-size: .6em; }
+article + article,
+section + section,
+article + section {
+    border-top: 2px solid #eaecef;
+    margin-top: 1.67em;
+    padding-top: .67em;
+}
 
-a:link, a:active, a:visited {
-    color: #4078c0;
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+h1 {
+    border-bottom: 2px solid #eaecef;
+    font-size: 2.4rem;
+    padding-bottom: .67em;
+}
+
+h4 small {
+    font-family: 'Montserrat', sans-serif;
+}
+
+small {
+    font-size: 75%;
+}
+
+p {
+    line-height: 1.5rem;
+}
+
+a[href] {
     text-decoration: none;
-    background: -webkit-linear-gradient(#fff, #fff), -webkit-linear-gradient(#fff, #fff), -webkit-linear-gradient(#ccc, #ccc);
-    background: linear-gradient(#fff, #fff), linear-gradient(#fff, #fff), linear-gradient(#ccc, #ccc);
-    -webkit-background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
-    -moz-background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
-    background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
-    background-repeat: no-repeat, no-repeat, repeat-x;
-    text-shadow: 0.03em 0 #fff, -0.03em 0 #fff, 0 0.03em #fff, 0 -0.03em #fff, 0.06em 0 #fff, -0.06em 0 #fff, 0.09em 0 #fff, -0.09em 0 #fff, 0.12em 0 #fff, -0.12em 0 #fff, 0.15em 0 #fff, -0.15em 0 #fff;
-    background-position: 0% 93%, 100% 93%, 0% 93%;
+    border-bottom: 1px solid;
 }
 
-a.ref {
-    font-weight: bold;
+a[href]:hover {
+    border-bottom: 2px solid;
+}
+
+span[aria-label] {
+    cursor: default;
 }
 
 a.ref-github { color: #4078c0; }
 a.ref-linkedin { color: #0077b5; }
 a.ref-cv { color: #FF3A61; }
 a.ref-monzo { color: #ED5656; }
-a.ref-otrl-3 { color: #3372B5; }
-a.ref-otrl-2 { color: #BD345E; }
-a.ref-otrl, a.ref-otrl-1 { color: #5B388A; }
+a.ref-otrl { color: #5B388A; }
 a.ref-graze { color: #00989e; }
 a.ref-300notes { color: #CF4647; }
 a.ref-bnt { color: #3BB200; }
@@ -38,30 +70,32 @@ a.ref-fullycharged { color: #5D8199; }
 a.ref-keybase { color: #fc8558; }
 
 ol.work {
-    list-style: none;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding: 0;
-    width: 55%;
+    margin: 0;
+    padding-inline-start: 0;
 }
 
-li p { width: auto; }
+ol.work li {
+    list-style: none;
+}
 
-li h3, li h4 { display: inline-block; margin-bottom: 0; }
-li h3:after, li h4:after { content: ", " }
+ol.work li aside {
+    font-weight: normal;
+    font-size: .67em;
+}
 
-@media screen and (max-width: 760px) {
-    article { padding: 0; }
-    ol.work { width: 90%; }
+.hidden {
+    visibility: hidden;
+    display: none;
+}
+
+@media screen and (max-width: 34em) {
+    h1 {
+        text-align: center;
+    }
 }
 
 @media print {
-    body {
-        padding-left: 0;
-        padding-right: 0;
-    }
-
-    article {
-        padding: 0;
+    html {
+        font-size: 10pt;
     }
 }

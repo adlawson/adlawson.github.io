@@ -5,7 +5,6 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="canonical" href="https://adlawson.com/cv"/>
-    <link rel="stylesheet" href="/vendor/edwardtufte/tufte-css/tufte.css"/>
     <link rel="stylesheet" href="/style/main.css"/>
     <link rel="icon" type="image/png" href="/image/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="/image/android-chrome-192x192.png" sizes="192x192">
@@ -14,93 +13,87 @@
 </head>
 <body>
 
-    <article>
+    <main>
         <h1>Andrew Lawson</h1>
-        <p class="subtitle">Polyglot software engineer</p>
-
-        <section>
-            <p>I&rsquo;m an experienced developer, currently a Backend Engineer at <a href="https://monzo.com" class="ref ref-monzo">Monzo</a> in London.</p>
-            <p>
-                My programming experience ranges from programming in Scala, Go, NodeJS, PHP, occasionally Python and Java, and I'm always learning more.
-                I&rsquo;m quick at picking up programming languages and paradigms owing to frequently shifting between functional and object oriented projects in different languages.
-                I am also somewhat experienced in dev-ops; creating build tools, deploying Docker containers, writing Ansible roles, configuring AWS and integrating CI.
-            </p>
-            <p>
-                I spend a good amount of my free time working on side projects and open source libraries, partly for self learning and progression but mainly because I enjoy solving hard problems.
-                You can find links to my public projects and online profiles at <a href="https://adlawson.com">adlawson.com</a>.
-            </p>
-        </section>
+        <article>
+            <p>I&rsquo;m an experienced software engineer currently working at <a href="https://monzo.com" class="ref ref-monzo">Monzo Bank</a>.</p>
+            <p>I&rsquo;m most comfortable working with distributed systems and microservice platform design, though I have previous experience with monolithic and &lsquo;many-service&rsquo; architectures.</p>
+            <ul>
+                <li>Scala (incl. Cats), Go, NodeJS, PHP</li>
+                <li>Distributed systems, Cassandra, Kafka, RabbitMQ, etcd, Akka streams</li>
+                <li>AWS, Docker, Hashicorp suite (Consul, Vault, Terraform)</li>
+            </ul>
+        </article>
 
         <section>
             <h2 id="work">Work Experience</h2>
             <ol class="work vcalendar" reversed>
 
-                <!-- Work: Monzo -->
                 <li class="vevent">
-                    <h3 class="fn org"><a href="https://monzo.com" class="ref ref-monzo">Monzo</a></h3>
-                    <h4 class="title">Backend Engineer</h4>
-                    <small><time datetime="2018-10-29" class="dtstart">October 2018</time> &ndash; <b>Present</b></small>
+                    <header>
+                        <h3 class="fn org"><a href="https://monzo.com" class="ref ref-monzo">Monzo Bank</a></h3>
+                        <h4 class="title">
+                            Snr. Backend Engineer
+                            <small><time datetime="2018-10-29" class="dtstart">October 2018</time> &ndash; <b>Present</b></small>
+                        </h4>
+                    </header>
                     <p>
-                        <span class="marginnote">
-                            Technologies include Go, Cassandra, NSQ, Kafka.
-                        </span>
-                        Working in the payments team on service reliability. More to follow&hellip;
+                        Working in a small squad within the Money Collective to build out core banking infrastructure. More to info to follow&hellip;
                     </p>
                 </li>
 
-                <!-- Work: OnTrack Retail -->
                 <li class="vevent">
-                    <h3 class="fn org"><a href="https://www.ontrackretail.co.uk" class="ref ref-otrl-3">OnTrack Retail</a></h3>
-                    <h4 class="title">CTO</h4>
-                    <small><time datetime="2017-08-01" class="dtstart">August 2017</time> &ndash; <time datetime="2017-10-26" class="dtend">October 2018</time></small>
+                    <header>
+                        <h3 class="fn org"><a href="https://www.ontrackretail.co.uk" class="ref ref-otrl">OnTrack Retail</a></h3>
+                        <h4 class="title">
+                            CTO
+                            <small><time datetime="2017-08-01" class="dtstart">August 2017</time> &ndash; <time datetime="2017-10-26" class="dtend">October 2018</time></small>
+                        </h4>
+                    </header>
                     <p>
-                        <span class="marginnote">
-                            Technologies include Scala (w/ Akka, Cats), RabbitMQ, MySQL, Docker, Hashicorp suite (Consul, Vault), Ansible, AWS.
-                        </span>
                         Continuing again from my previous role in this company as the Head of Engineering, my role as CTO allows me to focus more on planning current projects and the future of the company's technology.
                     </p>
                 </li>
+
                 <li class="vevent">
-                    <h3 class="fn org"><a href="https://www.ontrackretail.co.uk" class="ref ref-otrl-2">OnTrack Retail</a></h3>
-                    <h4 class="title">Head of Engineering</h4>
-                    <small><time datetime="2016-08-01" class="dtstart">August 2016</time> &ndash; <time datetime="2017-08-01" class="dtend">August 2017</time></small>
+                    <header>
+                        <h3 class="fn org hidden"><a href="https://www.ontrackretail.co.uk" class="ref ref-otrl">OnTrack Retail</a></h3>
+                        <h4 class="title">
+                            Head of Engineering
+                            <small><time datetime="2016-08-01" class="dtstart">August 2016</time> &ndash; <time datetime="2017-08-01" class="dtend">August 2017</time></small>
+                        </h4>
+                    </header>
                     <p>
-                        <span class="marginnote">
-                            Technologies include Scala (w/ Akka, Cats), RabbitMQ, MySQL, Docker, Hashicorp suite (Consul, Vault), Ansible and AWS.
-                        </span>
                         Continuing from my previous role in this company as a Senior Developer,
                         my role as the Head of Engineering involved organising our engineering and QA teams, shaping and simplifying our working processes, and meeting with technical clients and suppliers.
                     </p>
                 </li>
+
                 <li class="vevent">
-                    <h3 class="fn org"><a href="https://www.ontrackretail.co.uk" class="ref ref-otrl-1">OnTrack Retail</a></h3>
-                    <h4 class="title">Senior Developer</h4>
-                    <small><time datetime="2014-11-03" class="dtstart">November 2014</time> &ndash; <time datetime="2016-08-01" class="dtend">August 2016</time></small>
+                    <header>
+                        <h3 class="fn org hidden"><a href="https://www.ontrackretail.co.uk" class="ref ref-otrl">OnTrack Retail</a></h3>
+                        <h4 class="title">
+                            Snr. Developer
+                            <small><time datetime="2014-11-03" class="dtstart">November 2014</time> &ndash; <time datetime="2016-08-01" class="dtend">August 2016</time></small>
+                        </h4>
+                    </header>
                     <p>
-                        <span class="marginnote">
-                            Technologies included Scala (w/ Akka, Cats), RabbitMQ, MySQL, Ansible, AWS and Android.
-                            I also lead a team; running agile sprint planning, daily stand-up meetings, and conducting interviews.
-                        </span>
                         This project involved building a complex product within several very tight deadlines to delivery a new train ticket retail system.
                         It was built for some of the country&rsquo;s largest train operators including Southern, Southeastern, Thameslink and Gatwick Express.
-                        The system was structured as a network of tens of microservices.
-                    </p>
-                    <p>
-                        As well as the complex server-side systems I worked on, I also developed barcode and magnetic stripe encoders and a bluetooth printer driver for Android.
+                        The system was structured as a network of tens of services.
+                        I also lead a team; running agile sprint planning, daily stand-up meetings, and conducting interviews.
                     </p>
                 </li>
 
-                <!-- Work: Graze -->
                 <li class="vevent">
-                    <h3 class="fn org"><a href="https://graze.com" class="ref ref-graze">Graze</a></h3>
-                    <h4 class="title">R&amp;D Developer</h4>
-                    <small><time datetime="2013-02-11" class="dtstart">February 2013</time> &ndash; <time datetime="2014-12-05" class="dtend">December 2014</time></small>
+                    <header>
+                        <h3 class="fn org"><a href="https://graze.com" class="ref ref-graze">Graze</a></h3>
+                        <h4 class="title">
+                            R&amp;D Developer
+                            <small><time datetime="2013-02-11" class="dtstart">February 2013</time> &ndash; <time datetime="2014-12-05" class="dtend">December 2014</time></small>
+                        </h4>
+                    </header>
                     <p>
-                        <span class="marginnote">
-                            Technologies included PHP, NodeJS, Python, MySQL, Puppet and AWS.
-                            I think the product dispatch service is one of the projects I&rsquo;m most proud of so far in my career.
-                            It has vastly improved the flexibility and the speed at which a large business can adjust to market demands and I hope the project continues to serve them well in the years to come.
-                        </span>
                         My role in Research and Development at Graze involved many different projects covering a large range of skills and technologies.
                         I spent the first few months building and refining build tools, BDD tests, a database migration system and continuous integration.
                         As a big advocate of open software, I helped the tech team contribute back to projects we used and open new projects up to the open community.
@@ -113,83 +106,58 @@
                     </p>
                 </li>
 
-                <!-- Work: 300Notes-->
                 <li class="vevent">
-                    <h3 class="fn org"><a href="http://web.archive.org/web/20130821201542/http://www.300notes.com/" class="ref ref-300notes">300Notes</a></h3>
-                    <h4 class="title">Developer</h4>
-                    <small><time datetime="2012-12-01" class="dtstart">December 2012</time> &ndash; <time datetime="2014-01-02" class="dtend">January 2014</time></small>
-                    <p>
-                        <span class="marginnote">
-                            Technologies included NodeJS, MongoDB, Redis and AWS.
-                            As a part-time project I was initially reluctant to list it as work experience, but the range of skills and knowledge I have aquired deem it suitable.
-                        </span>
-                        The original server needed redevelopment to progress the project, so I was given free reign over the development.
-                        I rebuilt the server in NodeJS for the RESTful web service, the web socket server, and the authentication server.
-                        I was also responsible for most aspects of the server infrastructure like the databases, caching, and load balancing.
-                    </p>
+                    <header>
+                        <h3 class="fn org"><a href="https://bravenew.com" class="ref ref-bnt">BraveNewTalent</a></h3>
+                        <h4 class="title">
+                            Developer
+                            <small><time datetime="2011-04-18" class="dtstart">April 2011</time> &ndash; <time datetime="2013-01-31" class="dtend">February 2013</time></small>
+                        </h4>
+                    </header>
+                    <small>More information available upon request.</small>
                 </li>
 
-                <!-- Work: BraveNewTalent -->
                 <li class="vevent">
-                    <h3 class="fn org"><a href="https://bravenew.com" class="ref ref-bnt">BraveNewTalent</a></h3>
-                    <h4 class="title">Developer</h4>
-                    <small><time datetime="2011-04-18" class="dtstart">April 2011</time> &ndash; <time datetime="2013-01-31" class="dtend">February 2013</time></small>
-                    <p>
-                        <span class="marginnote">Technologies included PHP, MySQL, JavaScript, HTML and CSS</span>
-                        Taken on as a mid-level backend developer, my role had grown from being &ldquo;The PHP Guy&rdquo; to being a key member of the architecture team of the new, upcoming platform.
-                        Since working there, I had grown as a developer and an engineer; working in JavaScript and CoffeeScript alongside PHP on the backend.
-                    </p>
-                </li>
-
-                <!-- Work: Fully Charged -->
-                <li class="vevent">
-                    <h3 class="fn org"><a href="http://web.archive.org/web/20120623094637/http://fullycharged.org/" class="ref ref-fullycharged">Fully Charged</a></h3>
-                    <h4 class="title">Developer/Director</h4>
-                    <small><time datetime="2010-07-01" class="dtstart">July 2010</time> &ndash; <time datetime="2011-04-15" class="dtend">April 2011</time></small>
-                    <p>
-                        <span class="marginnote">Technologies included PHP, MySQL, JavaScript, HTML and CSS, Photoshop and Illustrator</span>
-                        Freelance work under my own company, specialising in application development and system setup.
-                        Running my own company, I was a client facing developer advocating the need for tested, stable applications.
-                    </p>
-                    <p>I learned a huge amount while working for myself, specifically in unit testing and separation of logic (besides all the administration work that comes with running a business).</p>
+                    <header>
+                        <h3 class="fn org"><a href="http://web.archive.org/web/20120623094637/http://fullycharged.org/" class="ref ref-fullycharged">Fully Charged</a></h3>
+                        <h4 class="title">
+                            Developer/Director
+                            <small><time datetime="2010-07-01" class="dtstart">July 2010</time> &ndash; <time datetime="2011-04-15" class="dtend">April 2011</time></small>
+                        </h4>
+                    </header>
+                    <small>More information available upon request.</small>
                 </li>
             </ol>
         </section>
+
         <section>
             <h2>Formal Education</h2>
             <ol class="work vcalendar" reversed>
-
-                <!-- Education: University -->
                 <li class="vevent">
-                    <h4 class="fn org">Northumbria University</h4>
-                    <small><time datetime="2006-09-01" class="dtstart">September 2006</time> &ndash; <time datetime="2009-06-01" class="dtend">June 2009</time></small>
-                    <p class="description">Architectural Technology. More information available upon request.</p>
-                </li>
-
-                <!-- Education: A Levels -->
-                <li class="vevent">
-                    <h4 class="fn org">King Edward VI, Morpeth</h4>
-                    <small><time datetime="2004-09-01" class="dtstart">September 2004</time> &ndash; <time datetime="2006-06-01" class="dtend">June 2006</time></small>
-                    <p class="description">A Levels in Maths, Physics and Product Design</p>
+                    <header>
+                        <h4 class="fn org">
+                            Northumbria University, GB
+                            <small><time datetime="2006-09-01" class="dtstart">September 2006</time> &ndash; <time datetime="2009-06-01" class="dtend">June 2009</time></small>
+                        </h4>
+                    </header>
+                    <small>More information available upon request.</small>
                 </li>
             </ol>
         </section>
 
         <section>
             <p>
-                <small>Last updated <time datetime="2018-11-04">November 2018</time>.
+                <small>Last updated <time datetime="2020-02">February 2020</time>.
                 Best viewed at <a href="https://adlawson.com/cv/">adlawson.com/cv</a>. Also available in <a href="https://adlawson.com/cv/andrew-lawson.pdf">PDF</a>.</small>
             </p>
         </section>
-    </article>
+    </main>
 
-    <!-- Google Analytics -->
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
         ga('create', 'UA-65671794-1', 'auto');
         ga('send', 'pageview');
     </script>
