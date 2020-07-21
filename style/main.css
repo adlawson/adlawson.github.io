@@ -37,6 +37,11 @@ h4 small {
     font-family: 'Montserrat', sans-serif;
 }
 
+h5 {
+    font-size: 1em;
+    margin-bottom: 0.5em;
+}
+
 small {
     font-size: 75%;
 }
@@ -96,6 +101,10 @@ ol.work li aside {
 
 @media print {
     html {
-        font-size: 10pt;
+        font-size: 8pt;
+    }
+
+    main {
+        max-width: 600px;
     }
 }
