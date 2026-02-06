@@ -1,176 +1,529 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-GB">
-<head>
-    <title>Andrew Lawson</title>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="canonical" href="https://adlawson.com/cv"/>
-    <link rel="stylesheet" href="/style/main.css"/>
-    <link rel="icon" type="image/png" href="/image/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="/image/android-chrome-192x192.png" sizes="192x192">
-    <link rel="icon" type="image/png" href="/image/favicon-96x96.png" sizes="96x96">
-    <link rel="icon" type="image/png" href="/image/favicon-16x16.png" sizes="16x16">
-</head>
-<body>
+    <head>
+        <title>Andrew Lawson</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="canonical" href="https://adlawson.com/cv" />
+        <link rel="stylesheet" href="/style/main.css" />
+        <link
+            rel="icon"
+            type="image/png"
+            href="/image/favicon-32x32.png"
+            sizes="32x32"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            href="/image/android-chrome-192x192.png"
+            sizes="192x192"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            href="/image/favicon-96x96.png"
+            sizes="96x96"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            href="/image/favicon-16x16.png"
+            sizes="16x16"
+        />
+    </head>
+    <body>
+        <main>
+            <h1>Andrew Lawson</h1>
+            <article>
+                <p>
+                    I&rsquo;m an experienced software engineer and engineering
+                    leader, working at
+                    <a href="https://monzo.com" class="ref ref-monzo"
+                        >Monzo Bank</a
+                    >.
+                </p>
+                <p>
+                    I&rsquo;m most comfortable working with distributed systems
+                    and microservice platform design, with previous experience
+                    with monolithic and &lsquo;many-service&rsquo;
+                    architectures.
+                </p>
+                <ul>
+                    <li>Go, Scala (incl. Cats), NodeJS, PHP</li>
+                    <li>
+                        Distributed systems, Cassandra, Kafka, RabbitMQ, etcd,
+                        Akka streams
+                    </li>
+                    <li>
+                        AWS, GCP, Docker, Hashicorp suite (Consul, Vault,
+                        Terraform)
+                    </li>
+                    <li>DBT, GCP BigQuery</li>
+                </ul>
+            </article>
 
-    <main>
-        <h1>Andrew Lawson</h1>
-        <article>
-            <p>I&rsquo;m an experienced software engineer currently working at <a href="https://monzo.com" class="ref ref-monzo">Monzo Bank</a>.</p>
-            <p>I&rsquo;m most comfortable working with distributed systems and microservice platform design, though I have previous experience with monolithic and &lsquo;many-service&rsquo; architectures.</p>
-            <ul>
-                <li>Go, Scala (incl. Cats), NodeJS, PHP</li>
-                <li>Distributed systems, Cassandra, Kafka, RabbitMQ, etcd, Akka streams</li>
-                <li>AWS, Docker, Hashicorp suite (Consul, Vault, Terraform)</li>
-            </ul>
-        </article>
+            <section>
+                <h2 id="work">Work Experience</h2>
+                <ol class="work vcalendar" reversed>
+                    <li class="vevent">
+                        <header>
+                            <h3 class="fn org">
+                                <a
+                                    href="https://monzo.com"
+                                    class="ref ref-monzo"
+                                    >Monzo Bank</a
+                                >
+                                <small
+                                    ><time datetime="2018-10-29" class="dtstart"
+                                        >October 2018</time
+                                    >
+                                    &ndash; <b>Present</b></small
+                                >
+                            </h3>
+                            <h4 class="title">
+                                Senior Staff Engineer (L70, Director)
+                                <small
+                                    ><time datetime="2023-10-01" class="dtstart"
+                                        >October 2023</time
+                                    >
+                                    &ndash; <b>Present</b></small
+                                >
+                            </h4>
+                            <p>
+                                Senior Staff is a Director level individual
+                                contributor role where I'm focussing on:
+                            </p>
+                        </header>
+                        <article>
+                            <h5>🤖 Augmentation Engineering</h5>
+                            <p>
+                                I'm currently leading work to augment technical
+                                disciplines at Monzo with AI tooling and
+                                infrastructure. At the forefront of our work
+                                we've moved well beyond ad-hoc assistance and
+                                "copilot" workflows, to running pools of agents
+                                that investigate and build at scale. The aim is
+                                to automate workloads that are relatively simple
+                                but cost considerable effort so we can keep our
+                                growing engineering org focussed on harder, more
+                                meaningful, problems.
+                            </p>
+                            <h5>🦺 Safer Changes</h5>
+                            <p>
+                                I lead a programme of strategic work to level up
+                                how we make changes at Monzo to improve
+                                confidence in our ability to ship technical
+                                changes. The aim is to make sure that as Monzo's
+                                product grows in complexity and as the
+                                engineering org at Monzo grows in size over the
+                                next few years, we can maintain high velocity
+                                without compromising on safety or quality.
+                            </p>
+                            <h5>🏋 Monzo Stand-in</h5>
+                            <p>
+                                Throughout 2023 I lead a large programme of work
+                                engineering a new platform we call Monzo
+                                Stand-in, aimed at overhauling the resiliency of
+                                Monzo's most critical systems. I've written more
+                                about this work at
+                                <a
+                                    href="https://monzo.com/blog/tolerating-full-cloud-outages-with-monzo-stand-in"
+                                    >Tolerating full cloud outages with Monzo
+                                    Stand-in</a
+                                >
+                                and I talked about it at
+                                <a
+                                    href="https://leaddev.com/software-quality/how-monzo-tolerates-full-cloud-outages"
+                                    >LeadDev LDX3 2025</a
+                                >, Google Cloud Summit 2025 and AWS re:Invent
+                                2025.
+                            </p>
+                            <h5>💷 Payments Collective Leadership</h5>
+                            <p>
+                                Extending my role in Banking Services Group, we
+                                expanded the group to 10 teams focussed on
+                                Payments and Finance systems, products,
+                                infrastructure and data. My role is to guide
+                                technical outcomes of the collective, working
+                                with the leads of each group and teams within
+                                the collective, and to identify opportunities
+                                and risks alongside others in senior leadership.
+                            </p>
+                        </article>
+                        <header>
+                            <h3 class="fn org hidden">
+                                <a
+                                    href="https://monzo.com"
+                                    class="ref ref-monzo"
+                                    >Monzo Bank</a
+                                >
+                                <small class="hidden"
+                                    ><time datetime="2018-10-29" class="dtstart"
+                                        >October 2018</time
+                                    >
+                                    &ndash; <b>Present</b></small
+                                >
+                            </h3>
+                            <h4 class="title">
+                                Staff Engineer (L60)
+                                <small
+                                    ><time datetime="2020-10-01" class="dtstart"
+                                        >October 2020</time
+                                    >
+                                    &ndash;
+                                    <time datetime="2023-10-01" class="dtstart"
+                                        >October 2023</time
+                                    ></small
+                                >
+                            </h4>
+                            <p>
+                                Expanding on my domains at Monzo as a Staff
+                                Engineer I worked on:
+                            </p>
+                        </header>
+                        <article>
+                            <h5>🏦 Banking Services Group</h5>
+                            <p>
+                                Expanding on my domains at Monzo as a Staff
+                                Engineer I worked on: In early 2022 I moved to
+                                tech lead a new group of Finance and Payments
+                                engineering squads, focussed on building our
+                                core banking platform. My role involves, amongst
+                                other things, working on defining the technical
+                                direction and strategy for the group,
+                                identifying problems and opportunities across
+                                the company that our squads are well placed to
+                                solve, diving deep into early technical
+                                programme scoping, and working closely with our
+                                tech leads to guide, coach and challenge to help
+                                them succeed.
+                            </p>
+                            <h5>💰 Finance Engineering</h5>
+                            <p>
+                                In September 2020 I moved to tech lead the
+                                Internal Finance Systems (now Finance
+                                Infrastructure) squad. The squad focussed on
+                                enhancing the maturity of our finance functions
+                                and on expanding our financial capabilities as
+                                the bank grew. This included building and owning
+                                our various Ledger and Treasury and other
+                                Accounting systems, as well as enabling
+                                engineers around Monzo to build financial
+                                products. The squad included backend engineers,
+                                data analysts and analytics engineers.
+                            </p>
+                        </article>
+                        <header>
+                            <h3 class="fn org hidden">
+                                <a
+                                    href="https://monzo.com"
+                                    class="ref ref-monzo"
+                                    >Monzo Bank</a
+                                >
+                                <small class="hidden"
+                                    ><time datetime="2018-10-29" class="dtstart"
+                                        >October 2018</time
+                                    >
+                                    &ndash; <b>Present</b></small
+                                >
+                            </h3>
+                            <h4 class="title">
+                                Senior Backend Engineer (L50)
+                                <small
+                                    ><time datetime="2018-10-29" class="dtstart"
+                                        >October 2018</time
+                                    >
+                                    &ndash;
+                                    <time datetime="2020-10-01" class="dtstart"
+                                        >October 2020</time
+                                    ></small
+                                >
+                            </h4>
+                            <p>
+                                I've been fortunate to have worked in a few
+                                domains as a Senior Engineer at Monzo,
+                                including:
+                            </p>
+                        </header>
+                        <article>
+                            <h5>🥦 Money Collective Risks</h5>
+                            <p>
+                                In late 2019 I joined a small squad to build our
+                                controls & processes within the Money
+                                Collective, focussing on risk. The scope of the
+                                work was very broad, including payment systems,
+                                internal financial processes, and escalating
+                                permissions for payment approvals. We built a
+                                number of new systems, but one in particular
+                                paved the way for widening the scope and
+                                improving the maturity of our banking platform.
+                            </p>
+                            <h5>🇺🇸 US Expansion</h5>
+                            <p>
+                                The project to launch a new Monzo product in the
+                                US started in early 2019 with 6 people including
+                                3 engineers. We built everything we needed to
+                                launch an early MVP in the US. We built new
+                                payment systems for new US Monzo cards, product
+                                features, banking integrations, amongst others.
+                                It was a huge undertaking, but it was incredibly
+                                fulfilling.
+                            </p>
+                        </article>
+                    </li>
 
-        <section>
-            <h2 id="work">Work Experience</h2>
-            <ol class="work vcalendar" reversed>
+                    <li class="vevent">
+                        <header>
+                            <h3 class="fn org">
+                                <a
+                                    href="https://www.ontrackretail.co.uk"
+                                    class="ref ref-otrl"
+                                    >OnTrack Retail</a
+                                >
+                                <small class="hidden"
+                                    ><time datetime="2014-11-03" class="dtstart"
+                                        >November 2014</time
+                                    >
+                                    &ndash;
+                                    <time datetime="2017-10-26" class="dtend"
+                                        >October 2018</time
+                                    ></small
+                                >
+                            </h3>
+                            <h4 class="title">
+                                Chief Technology Officer
+                                <small
+                                    ><time datetime="2017-08-01" class="dtstart"
+                                        >August 2017</time
+                                    >
+                                    &ndash;
+                                    <time datetime="2017-10-26" class="dtend"
+                                        >October 2018</time
+                                    ></small
+                                >
+                            </h4>
+                        </header>
+                        <p>
+                            Continuing again from my previous role in this
+                            company as the Head of Engineering, my role as CTO
+                            allowed me to focus more on the future of the
+                            company's technology strategy and partnerships.
+                        </p>
+                    </li>
 
-                <li class="vevent">
-                    <header>
-                        <h3 class="fn org"><a href="https://monzo.com" class="ref ref-monzo">Monzo Bank</a></h3>
-                        <h4 class="title">
-                            Snr. Backend Engineer
-                            <small><time datetime="2018-10-29" class="dtstart">October 2018</time> &ndash; <b>Present</b></small>
-                        </h4>
-                    </header>
-                    <p>
-                        In my time so far at Monzo I've been fortunate to have worked in a number of squads in different domains.
-                        Projects and squads I'd like to mention in particular:
-                    </p>
-                    <p>
-                        <h5>💰 Money Collective Risks</h5>
-                        In late 2019 I moved to a small squad set up to build out our risk controls processes within the Money Collective with the aim to reduce risk.
-                        The scope of the work involved was pretty broad, reaching into payment systems, internal financial processes, and our frameworks for escalating permissions for almost every way to move money at Monzo.
-                        We set up and built a number of new systems, but one in particular has paved the way for widening the scope and improving the maturity of the payment systems we can offer our customers.
-                    </p>
-                    <p>
-                        <h5>🇺🇸 US</h5>
-                        A project to build a new Monzo product in the US kicked off in early 2019 with 6 people including 3 engineers.
-                        Together we built everything we needed to launch an MVP in the US at launch events initially in LA, SF and NY.
-                        Amongst the things we built were new payment systems for new US-specific Monzo cards, product features, supplier integrations, and support for non-GBP customer currencies, all in time for our launch in the summer.
-                        It was a huge undertaking, but it was incredibly fulfilling to be a part of.
-                    </p>
-                </li>
+                    <li class="vevent">
+                        <header>
+                            <h3 class="fn org hidden">
+                                <a
+                                    href="https://www.ontrackretail.co.uk"
+                                    class="ref ref-otrl"
+                                    >OnTrack Retail</a
+                                >
+                                <small class="hidden"
+                                    ><time datetime="2014-11-03" class="dtstart"
+                                        >November 2014</time
+                                    >
+                                    &ndash;
+                                    <time datetime="2017-10-26" class="dtend"
+                                        >October 2018</time
+                                    ></small
+                                >
+                            </h3>
+                            <h4 class="title">
+                                Head of Engineering
+                                <small
+                                    ><time datetime="2016-08-01" class="dtstart"
+                                        >August 2016</time
+                                    >
+                                    &ndash;
+                                    <time datetime="2017-08-01" class="dtend"
+                                        >August 2017</time
+                                    ></small
+                                >
+                            </h4>
+                        </header>
+                        <p>
+                            Continuing from my previous role in this company as
+                            a Senior Developer, my role as the Head of
+                            Engineering involved leading our engineering and QA
+                            teams, shaping and simplifying our working
+                            processes, and working with technical clients and
+                            suppliers.
+                        </p>
+                    </li>
 
-                <li class="vevent">
-                    <header>
-                        <h3 class="fn org"><a href="https://www.ontrackretail.co.uk" class="ref ref-otrl">OnTrack Retail</a></h3>
-                        <h4 class="title">
-                            CTO
-                            <small><time datetime="2017-08-01" class="dtstart">August 2017</time> &ndash; <time datetime="2017-10-26" class="dtend">October 2018</time></small>
-                        </h4>
-                    </header>
-                    <p>
-                        Continuing again from my previous role in this company as the Head of Engineering, my role as CTO allows me to focus more on planning current projects and the future of the company's technology.
-                    </p>
-                </li>
+                    <li class="vevent">
+                        <header>
+                            <h3 class="fn org hidden">
+                                <a
+                                    href="https://www.ontrackretail.co.uk"
+                                    class="ref ref-otrl"
+                                    >OnTrack Retail</a
+                                >
+                                <small class="hidden"
+                                    ><time datetime="2014-11-03" class="dtstart"
+                                        >November 2014</time
+                                    >
+                                    &ndash;
+                                    <time datetime="2017-10-26" class="dtend"
+                                        >October 2018</time
+                                    ></small
+                                >
+                            </h3>
+                            <h4 class="title">
+                                Senior Developer
+                                <small
+                                    ><time datetime="2014-11-03" class="dtstart"
+                                        >November 2014</time
+                                    >
+                                    &ndash;
+                                    <time datetime="2016-08-01" class="dtend"
+                                        >August 2016</time
+                                    ></small
+                                >
+                            </h4>
+                        </header>
+                        <small>More information available upon request.</small>
+                    </li>
 
-                <li class="vevent">
-                    <header>
-                        <h3 class="fn org hidden"><a href="https://www.ontrackretail.co.uk" class="ref ref-otrl">OnTrack Retail</a></h3>
-                        <h4 class="title">
-                            Head of Engineering
-                            <small><time datetime="2016-08-01" class="dtstart">August 2016</time> &ndash; <time datetime="2017-08-01" class="dtend">August 2017</time></small>
-                        </h4>
-                    </header>
-                    <p>
-                        Continuing from my previous role in this company as a Senior Developer,
-                        my role as the Head of Engineering involved organising our engineering and QA teams, shaping and simplifying our working processes, and meeting with technical clients and suppliers.
-                    </p>
-                </li>
+                    <li class="vevent">
+                        <header>
+                            <h3 class="fn org">
+                                <a
+                                    href="https://graze.com"
+                                    class="ref ref-graze"
+                                    >Graze</a
+                                >
+                            </h3>
+                            <h4 class="title">
+                                R&amp;D Developer
+                                <small
+                                    ><time datetime="2013-02-11" class="dtstart"
+                                        >February 2013</time
+                                    >
+                                    &ndash;
+                                    <time datetime="2014-12-05" class="dtend"
+                                        >December 2014</time
+                                    ></small
+                                >
+                            </h4>
+                        </header>
+                        <small>More information available upon request.</small>
+                    </li>
 
-                <li class="vevent">
-                    <header>
-                        <h3 class="fn org hidden"><a href="https://www.ontrackretail.co.uk" class="ref ref-otrl">OnTrack Retail</a></h3>
-                        <h4 class="title">
-                            Snr. Developer
-                            <small><time datetime="2014-11-03" class="dtstart">November 2014</time> &ndash; <time datetime="2016-08-01" class="dtend">August 2016</time></small>
-                        </h4>
-                    </header>
-                    <p>
-                        This project involved building a complex product within several very tight deadlines to delivery a new train ticket retail system.
-                        It was built for some of the country&rsquo;s largest train operators including Southern, Southeastern, Thameslink and Gatwick Express.
-                        The system was structured as a network of tens of services.
-                        I also lead a team; running agile sprint planning, daily stand-up meetings, and conducting interviews.
-                    </p>
-                </li>
+                    <li class="vevent">
+                        <header>
+                            <h3 class="fn org">
+                                <a
+                                    href="https://bravenew.com"
+                                    class="ref ref-bnt"
+                                    >BraveNewTalent</a
+                                >
+                            </h3>
+                            <h4 class="title">
+                                Developer
+                                <small
+                                    ><time datetime="2011-04-18" class="dtstart"
+                                        >April 2011</time
+                                    >
+                                    &ndash;
+                                    <time datetime="2013-01-31" class="dtend"
+                                        >February 2013</time
+                                    ></small
+                                >
+                            </h4>
+                        </header>
+                        <small>More information available upon request.</small>
+                    </li>
 
-                <li class="vevent">
-                    <header>
-                        <h3 class="fn org"><a href="https://graze.com" class="ref ref-graze">Graze</a></h3>
-                        <h4 class="title">
-                            R&amp;D Developer
-                            <small><time datetime="2013-02-11" class="dtstart">February 2013</time> &ndash; <time datetime="2014-12-05" class="dtend">December 2014</time></small>
-                        </h4>
-                    </header>
-                    <p>
-                        A large part of my the work was to redevelop the core product dispatch system to help the software scale with the business.
-                        This system was the first to be separated from the core service into its own microservice.
-                        After many months of group and A/B testing, the new system was gradually released to the rest of the customer base.
-                        As of December 2014, its picking algorithms were used to create orders for tens of millions of customers.
-                    </p>
-                    <small>More information available upon request.</small>
-                </li>
+                    <li class="vevent">
+                        <header>
+                            <h3 class="fn org">
+                                <a
+                                    href="http://web.archive.org/web/20120623094637/http://fullycharged.org/"
+                                    class="ref ref-fullycharged"
+                                    >Fully Charged</a
+                                >
+                            </h3>
+                            <h4 class="title">
+                                Developer/Director
+                                <small
+                                    ><time datetime="2010-07-01" class="dtstart"
+                                        >July 2010</time
+                                    >
+                                    &ndash;
+                                    <time datetime="2011-04-15" class="dtend"
+                                        >April 2011</time
+                                    ></small
+                                >
+                            </h4>
+                        </header>
+                        <small>More information available upon request.</small>
+                    </li>
+                </ol>
+            </section>
 
-                <li class="vevent">
-                    <header>
-                        <h3 class="fn org"><a href="https://bravenew.com" class="ref ref-bnt">BraveNewTalent</a></h3>
-                        <h4 class="title">
-                            Developer
-                            <small><time datetime="2011-04-18" class="dtstart">April 2011</time> &ndash; <time datetime="2013-01-31" class="dtend">February 2013</time></small>
-                        </h4>
-                    </header>
-                    <small>More information available upon request.</small>
-                </li>
+            <section>
+                <h2>Formal Education</h2>
+                <ol class="work vcalendar" reversed>
+                    <li class="vevent">
+                        <header>
+                            <h4 class="fn org">
+                                Northumbria University, GB
+                                <small
+                                    ><time datetime="2006-09-01" class="dtstart"
+                                        >September 2006</time
+                                    >
+                                    &ndash;
+                                    <time datetime="2009-06-01" class="dtend"
+                                        >June 2009</time
+                                    ></small
+                                >
+                            </h4>
+                        </header>
+                        <small>More information available upon request.</small>
+                    </li>
+                </ol>
+            </section>
 
-                <li class="vevent">
-                    <header>
-                        <h3 class="fn org"><a href="http://web.archive.org/web/20120623094637/http://fullycharged.org/" class="ref ref-fullycharged">Fully Charged</a></h3>
-                        <h4 class="title">
-                            Developer/Director
-                            <small><time datetime="2010-07-01" class="dtstart">July 2010</time> &ndash; <time datetime="2011-04-15" class="dtend">April 2011</time></small>
-                        </h4>
-                    </header>
-                    <small>More information available upon request.</small>
-                </li>
-            </ol>
-        </section>
+            <section>
+                <p>
+                    <small
+                        >Last updated
+                        <time datetime="2026-02">February 2026</time>. Best
+                        viewed at
+                        <a href="https://adlawson.com/cv/">adlawson.com/cv/</a>.
+                        Also available in
+                        <a href="https://adlawson.com/cv/andrew-lawson.pdf"
+                            >PDF</a
+                        >.</small
+                    >
+                </p>
+            </section>
+        </main>
 
-        <section>
-            <h2>Formal Education</h2>
-            <ol class="work vcalendar" reversed>
-                <li class="vevent">
-                    <header>
-                        <h4 class="fn org">
-                            Northumbria University, GB
-                            <small><time datetime="2006-09-01" class="dtstart">September 2006</time> &ndash; <time datetime="2009-06-01" class="dtend">June 2009</time></small>
-                        </h4>
-                    </header>
-                    <small>More information available upon request.</small>
-                </li>
-            </ol>
-        </section>
-
-        <section>
-            <p>
-                <small>Last updated <time datetime="2020-07">July 2020</time>.
-                Best viewed at <a href="https://adlawson.com/cv/">adlawson.com/cv/</a>. Also available in <a href="https://adlawson.com/cv/andrew-lawson.pdf">PDF</a>.</small>
-            </p>
-        </section>
-    </main>
-
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-        ga('create', 'UA-65671794-1', 'auto');
-        ga('send', 'pageview');
-    </script>
-
-</body>
+        <script>
+            (function (i, s, o, g, r, a, m) {
+                i["GoogleAnalyticsObject"] = r;
+                ((i[r] =
+                    i[r] ||
+                    function () {
+                        (i[r].q = i[r].q || []).push(arguments);
+                    }),
+                    (i[r].l = 1 * new Date()));
+                ((a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]));
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m);
+            })(
+                window,
+                document,
+                "script",
+                "//www.google-analytics.com/analytics.js",
+                "ga",
+            );
+            ga("create", "UA-65671794-1", "auto");
+            ga("send", "pageview");
+        </script>
+    </body>
 </html>

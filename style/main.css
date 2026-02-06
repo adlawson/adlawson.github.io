@@ -1,16 +1,16 @@
-@import url('../vendor/csstools/sanitize.css/sanitize.css');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:600|Montserrat&display=swap');
+@import url("../vendor/csstools/sanitize.css/sanitize.css");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:600|Montserrat&display=swap");
 
 html {
     cursor: inherit;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 12pt;
     color: #24292e;
 }
 
 main {
     margin: 3rem auto;
-    max-width: 720px;
+    max-width: 920px;
     padding: 0 2rem;
 }
 
@@ -19,22 +19,40 @@ section + section,
 article + section {
     border-top: 2px solid #eaecef;
     margin-top: 1.67em;
-    padding-top: .67em;
+    padding-top: 0.67em;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Open Sans', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    break-after: avoid;
+    font-family: "Open Sans", sans-serif;
     font-weight: 600;
 }
 
 h1 {
     border-bottom: 2px solid #eaecef;
     font-size: 2.4rem;
-    padding-bottom: .67em;
+    padding-bottom: 0.67em;
 }
 
+h3 small,
 h4 small {
-    font-family: 'Montserrat', sans-serif;
+    color: #24292e;
+    font-family: "Montserrat", sans-serif;
+}
+
+h3 small:before,
+h4 small:before {
+    content: "(";
+}
+
+h3 small:after,
+h4 small:after {
+    content: ")";
 }
 
 h5 {
@@ -63,16 +81,36 @@ span[aria-label] {
     cursor: default;
 }
 
-a.ref-github { color: #4078c0; }
-a.ref-linkedin { color: #0077b5; }
-a.ref-cv { color: #FF3A61; }
-a.ref-monzo { color: #ED5656; }
-a.ref-otrl { color: #5B388A; }
-a.ref-graze { color: #00989e; }
-a.ref-300notes { color: #CF4647; }
-a.ref-bnt { color: #3BB200; }
-a.ref-fullycharged { color: #5D8199; }
-a.ref-keybase { color: #fc8558; }
+a.ref-github {
+    color: #4078c0;
+}
+a.ref-linkedin {
+    color: #0077b5;
+}
+a.ref-cv {
+    color: #ff3a61;
+}
+a.ref-monzo {
+    color: #ed5656;
+}
+a.ref-otrl {
+    color: #5b388a;
+}
+a.ref-graze {
+    color: #00989e;
+}
+a.ref-300notes {
+    color: #cf4647;
+}
+a.ref-bnt {
+    color: #3bb200;
+}
+a.ref-fullycharged {
+    color: #5d8199;
+}
+a.ref-keybase {
+    color: #fc8558;
+}
 
 ol.work {
     margin: 0;
@@ -85,7 +123,12 @@ ol.work li {
 
 ol.work li aside {
     font-weight: normal;
-    font-size: .67em;
+    font-size: 0.67em;
+}
+
+ol.work li article {
+    border-left: 2px solid #eaecef;
+    padding: 0 0 0 2em;
 }
 
 .hidden {
